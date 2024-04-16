@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 - Starter
 
-https://wishingwell13.github.io/Lab2_Starter/
+wishingwell13.github.io/sp24-cse110-lab3
