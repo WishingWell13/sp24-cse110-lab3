@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <title>Meeting Minutes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mycss.css">
+
     
     <!-- From Favicon.io -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -24,12 +29,16 @@
             <a href="./part2.txt">Part 2</a> 
         </nav>
         
-        <p>Attendance:</p>
+        <p class="attendance">Attendance:</p>
         <ul> 
-            <li>Andy</li>
-            <li>Victor</li>
-            <li>Druv</li>
-            <li>Dev</li>
+            <li class="green">Andy</li>
+            <li class="green">Victor</li>
+            <li class="green">Druv</li>
+            <li class="green">Dev</li>
+        </ul>
+        <p class="attendance">Excused:</p>
+        <ul> 
+            <li class="orange">Jerald</li>
         </ul>
         <details>
             <summary>Link to download Zoom</summary>
@@ -38,8 +47,14 @@
     
         <hr>
         
+        <div>
+            <p>==============</p>
+            <section>
+                <p>================</p>
+            </section>
+        </div>
         <section>
-            <div>Projected Time: 25 minutes</div>
+            <div class="lightBlue">Projected Time: 25 minutes</div>
             <p>Agenda:</p>
             <ol> 
                 <li>Decide which platforms to target first</li>
@@ -88,20 +103,20 @@
               
         </section>
         
-    </main>
+    
 
-    <p>This is a <b>template</b> for meeting notes made using <em>HTML without CSS</em>. 
-        Please feel free to <i>delete</i> any of the placeholder text. 
+    <p>This is a <b class="gamut2">template</b> for meeting notes made using <em class="gamut1">HTML without CSS</em>. 
+        Please feel free to <i class="green">delete</i> any of the placeholder text. 
         <br>
         <strong>Please do not sell this template.</strong>
     
     </p>
 
-    <section>
+    <section class="fancyBorder">
         <h3>Let's Get To Know You!</h3>
         <form>
             <fieldset>
-                <p>What colors do you like?</p>
+                <p class="pink">What colors do you like?</p>
                 <input type="checkbox" id="purple" name="color" value="purple">
                 <label for="purple"> Purple</label><br>
                 <input type="checkbox" id="Green" name="color" value="Green">
@@ -111,13 +126,15 @@
 
                 <br>
 
-                <p>What is the best ice cream flavor?</p>
+                <p class="red">What is the best ice cream flavor?</p>
                 <input type="radio" id="rocky_road" name="fav_flavor" value="rocky_road">
                 <label for="rocky_road">Rocky Road</label><br>
                 <input type="radio" id="vanilla" name="fav_flavor" value="vanilla">
                 <label for="vanilla">Vanilla</label><br>
                 <input type="radio" id="strawberry" name="fav_flavor" value="strawberry">
                 <label for="strawberry">Strawberry</label>
+                <input style="display:none;" type="radio" id="pinapple" name="fav_flavor" value="pinapple">
+                <label style="display:none;" for="pinapple">Pinapple</label>
 
                 <br>
 
@@ -155,12 +172,12 @@
                   <label for="schoolStatus">What year are you in college?</label>
 
                     <select name="cars" id="schoolStatus">
-                    <option value="Freshman">1st Year</option>
-                    <option value="Sophomore">2nd Year</option>
-                    <option value="Junior">3rd Year</option>
-                    <option value="Senior">4th Year</option>
-                    <option value="5th Year">5th Year</option>
-                    <option value="Graduated">Graduated</option>
+                        <option value="Freshman">1st Year</option>
+                        <option value="Sophomore">2nd Year</option>
+                        <option value="Junior">3rd Year</option>
+                        <option value="Senior">4th Year</option>
+                        <option value="5th Year">5th Year</option>
+                        <option value="Graduated">Graduated</option>
                     </select>
 
                     <br>
@@ -168,6 +185,16 @@
                     <button type="button">Save</button>
             </fieldset>
         </form>
+
+        <p>Done!</p>
+
+        <div id="Keywords">
+            <p>Keywords: </p>
+            <p>Pomodoro</p>
+            <p>Sprint</p>
+            <p>Scrum</p>
+        </div>
+        
 
     </section>
     
@@ -178,11 +205,13 @@ datalist
 select
 option
 button -->
-
+    </main>
     <footer>
         <p>Author: Andrew Smithwick</p>
         <p><a href="mailto:asmithwick@ucsd.edu">asmithwick@ucsd.edu</a></p>
         <p>Year 2</p>
-      </footer>
+    </footer>
+
+
   </body>
 </html>
