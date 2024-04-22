@@ -1,0 +1,147 @@
+#Keywords{
+    display: inline-block;
+    max-width: .5vw;
+    max-height: 0.2vw;
+    overflow: hidden;
+    position: sticky;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    bottom: 0px;
+}
+
+*{
+    margin: 1px;
+}
+
+[value="spa"]{
+    color: cornflowerblue;
+}
+
+div p{
+    border: 3px;
+    border-style: double;
+    border-color: azure;
+}
+
+p:has(+ ol) {
+    text-decoration-line: underline;
+  }
+
+div > p{
+    font-weight: bold;
+}
+
+li + li{
+    font-style: italic;
+}
+
+form ~ p {
+    background-color: rgb(255, 255, 0);
+}
+
+/* List of colors */
+
+button:hover {
+    color: red;
+}
+
+.orange{
+    color: rgb(255, 165, 0);
+}
+
+input:active {
+    background-color: beige;
+}
+
+.lightBlue{
+    color: #add8e6;
+    text-decoration: dotted;
+}
+
+.green{
+    color: hsl(150, 50%, 50%);
+}
+
+p.green{
+    color: hsl(150, 100%, 15%);
+}
+
+.pink{
+    color: pink;
+}
+
+.red{
+    --colorRed: red;
+    color: var(--colorRed, grey)
+}
+
+.gamut1{
+    color: color(display-p3 1 0.5 0);
+}
+
+.gamut2{
+    color: color-mix(in srgb, #34c9eb 20%, white);
+}
+
+span{
+    background-color: rgba(93, 93, 242, 0.3);
+}
+
+/* 1 relative */
+div, section{
+    gap: 1rem;
+    & p{
+        font-variant: small-caps;
+    }
+}
+
+strong{
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fancyBorder{
+    border: 2px;
+    border-style: groove;
+    border-color: azure;
+    border-radius: 1px;
+}
+
+h1{
+    text-align: center;
+}
+
+/* 1 relative, 3 fixed */
+ul{
+    padding: 6pt, 0.5em, 0.75pc, 0.75mm;
+}
+
+ol{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
+
+.slightMargins{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
+
+.bigMargins{
+    margin: 1, 1, 0.5, 0.5;
+}
+
+/* 1 relative */
+.big{
+    height: 0.5vh;
+    display: relative;
+}
+
+.attendance {
+    display: grid;
+}
