@@ -4,6 +4,12 @@
 #### Project Lead: 
 #### Date:
 
+| Attended | Absent |
+|----------|--------|
+|   Person 1  |    Person A    |
+| Person 2    | Person B   |
+
+
 ## Person 1
 ### Priorities
 - Item 1
