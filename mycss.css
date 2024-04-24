@@ -113,6 +113,11 @@ h1{
     text-align: center;
 }
 
+h2{
+    margin: auto;
+    border: 2rem dotted chartreuse;
+}
+
 /* 1 relative, 3 fixed */
 ul{
     padding: 6pt 0.5em 0.75pc 0.75mm;
