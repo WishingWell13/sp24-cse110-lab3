@@ -150,4 +150,6 @@ ol{
 
 .attendance {
     display: grid;
+    position: relative;
+    left: 12px;
 }
